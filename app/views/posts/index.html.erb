@@ -1,0 +1,6 @@
+<% @posts.each do |post| %>
+    <p><%= post.content %> - <%= post.scheduled_at %> - <%= post.published ? 'Published' : 'Scheduled' %></p>
+  <% end %>
+  <%= link_to 'New Post', new_post_path %>
+  
+ 

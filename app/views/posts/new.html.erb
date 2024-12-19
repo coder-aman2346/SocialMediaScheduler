@@ -1,0 +1,5 @@
+<%= form_with model: @post, local: true do |form| %>
+    <%= form.text_area :content %>
+    <%= form.datetime_select :scheduled_at %>
+    <%= form.submit %>
+  <% end %>
